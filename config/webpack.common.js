@@ -42,7 +42,7 @@ const app = {
 
 const templates = globule.find("./src/templates/*.html");
 templates.forEach((template) => {
-  const fileName = template.replace("./src/templates/", "");
+  const fileName = template.replace("./src/", "");
   const chunk = fileName.slice(0,-5)
   app.plugins.push(
     new HtmlWebpackPlugin({
