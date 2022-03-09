@@ -1,12 +1,12 @@
 @import './variables.scss';
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
   color: $main;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 14px;
   font-feature-settings: 'palt';
   letter-spacing: 0.1em;
@@ -168,13 +168,13 @@ p {
   line-height: 1.7;
 }
 
-a {
-  color: $main;
-  transition: color 0.35s ease;
-  &:hover {
-    color: $link-dark;
-  }
-  &:visited {
-    color: $link-main;
-  }
-}
+// a {
+//   color: $main;
+//   transition: color 0.35s ease;
+//   &:hover {
+//     color: $link-dark;
+//   }
+//   &:visited {
+//     color: $link-main;
+//   }
+// }

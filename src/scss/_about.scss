@@ -1,0 +1,68 @@
+@import "./variables";
+
+.about {
+  width: 100%;
+  height: auto;
+  h2 {
+    text-align: center;
+    font-size: 38px;
+    color: $font-title;
+    font-weight: lighter;
+    padding-bottom: 32px;
+  }
+  &__image {
+    text-align: center;
+    img {
+      width: 288px;
+    }
+  }
+
+  &__text1,
+  &__text2 {
+    margin: 0 auto;
+    width: 308px;
+    text-align: justify;
+    color: $font-text;
+    padding-bottom: 90px;
+  }
+  &__text2 {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+
+  @include mq("md") {
+    &__block {
+      width: 70vw;
+      transform: translate(calc(50vw - 50%));
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row-reverse;
+    }
+    &__text1 {
+      width: 478px;
+    }
+    &__text2 {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      width: 350px;
+    }
+    h2 {
+      font-size: clamp(50px, 6vw, 75px);
+      padding-bottom: 64px;
+    }
+    br {
+      display: none;
+    }
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  @include mq("xl") {
+    &__block {
+      width: 65vw;
+    }
+  }
+}

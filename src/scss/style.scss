@@ -1,7 +1,5 @@
-@import './variables';
+@import './_variables';
+@import './base';
+@import './_top';
+@import './_about';
 
-.test {
-  font-size: 50px;
-  color: red;
-  z-index: 100;
-}

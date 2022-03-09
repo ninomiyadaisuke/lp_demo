@@ -1,2 +1,2 @@
-import "../scss/style.scss";
-console.log("hello");
+import '../scss/style.scss'
+

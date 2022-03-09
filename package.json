@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production --config config/webpack.prod.js",
+    "buil": "webpack --mode development --config config/webpack.dev.js",
     "watch": "webpack --mode development --watch",
     "start": "webpack serve --mode=development --config config/webpack.dev.js"
   },
@@ -27,5 +28,8 @@
     "webpack-dev-server": "^4.7.4",
     "webpack-merge": "^5.8.0",
     "webpack-watched-glob-entries-plugin": "^2.2.4"
+  },
+  "dependencies": {
+    "swiper": "^8.0.7"
   }
 }
