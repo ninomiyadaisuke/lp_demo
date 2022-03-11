@@ -1,0 +1,76 @@
+@import "./variables";
+
+.map {
+  padding-top: 140px;
+  width: 100%;
+  h2 {
+    text-align: center;
+  }
+  &__gmap {
+    padding-top: 16px;
+    width: 100%;
+    iframe {
+      width: 100%;
+      height: 378px;
+      margin-bottom: 72px;
+    }
+  }
+  &__title,
+  &__text {
+    color: $font-text;
+  }
+  &__text {
+    text-indent: 16px;
+    padding: 16px 0 32px 0;
+  }
+  &__access {
+    display: flex;
+    justify-content: center;
+  }
+  @include mq("md") {
+    h2 {
+      font-size: 75px;
+    }
+    &__container {
+      display: flex;
+      padding-top: 64px;
+      display: flex;
+      transform: translate(calc(50vw - 50%));
+      width: 65vw;
+    }
+    &__card {
+      position: relative;
+      width: 46%;
+      max-width: 469px;
+      min-width: 250px;
+    }
+    &__gmap {
+      height: 0;
+      padding-top: 97%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        margin-right: 9%;
+      }
+    }
+    &__access {
+      align-items: center;
+      margin-left: 7%;
+      width: 45%;
+      max-width: 458px;
+      min-width: 250px;
+      hr {
+        width: 100%;
+      }
+      br {
+        display: none;
+      }
+    }
+    &__text {
+      text-indent: 16px;
+      padding-top: 32px;
+    }
+  }
+}
