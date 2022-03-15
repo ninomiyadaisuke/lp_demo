@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.getElementById("test"),n=document.getElementsByName("check"),t=n.length;for(let o=0;o<t;o++){const t=n[o].value;e.innerHTML="saunaです",n[o].addEventListener("change",(()=>{"sauna"===t&&(e.innerHTML="saunaです"),"food"===t&&(e.innerHTML="foodです"),"goods"===t&&(e.innerHTML="goodsです")}))}})();
