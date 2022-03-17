@@ -1,7 +1,6 @@
 @import "./variables";
 
 .pickup {
-  width: 100%;
   padding-top: 98px;
   h2 {
     padding-bottom: 80px;
@@ -19,23 +18,46 @@
     object-fit: cover;
     position: absolute;
     right: 0;
-    width: 70%;
+    width: 60%;
   }
   div:nth-child(2n) img {
     left: 0;
+  }
+  .menu {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: black;
+    position: relative;
+  }
+  p {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    top: 53px;
+    left: 1px;
+    font-size: 12px;
   }
   @include mq("md") {
     transform: translate(calc(50vw - 50%));
     width: 75vw;
     div {
       height: 720px;
-      min-width: 800px;
     }
     h2 {
       font-size: 75px;
     }
     img {
       width: 50%;
+    }
+    .menu {
+      width: 200px;
+      height: 200px;
+    }
+    p {
+      top: 85px;
+      left: 15px;
+      font-size: 16px;
     }
   }
 }
