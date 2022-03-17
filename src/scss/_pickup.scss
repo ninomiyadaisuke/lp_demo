@@ -1,0 +1,41 @@
+@import "./variables";
+
+.pickup {
+  width: 100%;
+  padding-top: 98px;
+  h2 {
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  div {
+    height: 374px;
+    margin: 4rem 0;
+    position: relative;
+    width: 100%;
+  }
+  img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    width: 70%;
+  }
+  div:nth-child(2n) img {
+    left: 0;
+  }
+  @include mq("md") {
+    transform: translate(calc(50vw - 50%));
+    width: 75vw;
+    div {
+      height: 720px;
+      min-width: 800px;
+    }
+    h2 {
+      font-size: 75px;
+    }
+    img {
+      width: 50%;
+    }
+  }
+}
