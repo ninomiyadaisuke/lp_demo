@@ -1,0 +1,38 @@
+@import './variables';
+
+.schedule {
+  padding-top: 100px;
+  width: 100%;
+  h2,h3,h4,p {
+    text-align: center;
+    color: $font-text;
+  }
+  h2 {
+    padding-bottom: 64px;
+    color: $font-title;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h4 {
+    padding: 24px 0 24px 0;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  p {
+    text-align: center;
+  }
+  @include mq('md') {
+    padding-top: 160px;
+    h2 {
+      font-size: 75px;
+    }
+    h3 {
+      font-size: 58px;
+    }
+    h4 {
+      font-size: 36px;
+    }
+  }
+}
