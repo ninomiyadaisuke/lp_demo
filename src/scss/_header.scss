@@ -1,0 +1,54 @@
+@import "./variables";
+
+.header {
+  width: 90vw;
+  transform: translate(calc(50vw - 50%));
+  position: fixed;
+  nav {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  ul {
+    width: 120px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  img {
+    display: none;
+  }
+  &__licon::after,
+  &__ricon::after {
+    display: none;
+  }
+
+  @include mq("md") {
+    input {
+      display: none;
+    }
+    &__licon::after,
+    &__ricon::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background: #fffee3;
+      border-radius: 50%;
+      z-index: -1;
+      right: -17px;
+      top: 45px;
+    }
+    &__ricon::after {
+      left: -18px;
+    }
+    img {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
