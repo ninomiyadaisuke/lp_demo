@@ -1,0 +1,110 @@
+@import './variables';
+
+.contact {
+  margin-top: 100px;
+  h2 {
+    text-align: center;
+  }
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+  }
+  label {
+    color: $font-text;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 6px;
+  }
+  input,textarea,&__name {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    outline: solid 1px #BFBFBF;
+    text-indent: 5px;
+    transition: all 0.2s ease-in-out;
+    &:focus {
+      outline: 1px solid #3da9fc;
+    }
+  }
+  &__name {
+    width: 80% !important;
+  }
+  textarea {
+    height: 183px;
+    resize: none;
+  }
+  p {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 24px;
+    color: $font-text;
+  }
+  .form-invalid {
+    outline: solid 1px #de3d5c;
+  }
+  &__check {
+    margin: 50px auto 50px auto;
+    width: 260px;
+    height: 96px;
+    border: solid 1px #BFBFBF;
+    background: #F2F2F2;
+    position: relative;
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    width: 187px;
+    height: 40px;
+    border: solid 1px $font-text;
+    border-radius: 20px;
+    background: #fff;
+    color: #363c3a;
+  }
+  // label {
+  //   content: '';
+  //   width: 400px;
+  //   height: 400px;
+  //   background: red;
+  // }
+  &__checkbox {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+  }
+  input:checked + &__checkbox::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 125px;
+    width: 13px;
+    height: 25px;
+    transform: rotate(45deg);
+    border-bottom: 3px solid #89D39D;
+    border-right: 3px solid #89D39D;
+    padding: 0 !important;
+    z-index: 30;
+  }
+  @include mq('md') {
+    h2 {
+      font-size: 75px;
+    }
+    form {
+      width: 637px;
+    }
+    &__name {
+      width: 60% !important;
+    }
+  }
+}
